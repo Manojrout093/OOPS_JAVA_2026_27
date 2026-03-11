@@ -1,0 +1,28 @@
+========== EMPLOYEE MANAGEMENT SYSTEM ==========
+
+com.company (Custom Package)
+ ├── employee
+       └── Employee.java ----> empID, 
+				                       name, 
+				                       dept, 
+				                       salary
+ ├── service
+        └── EmployeeService.java 
+	              	└──  ----> addEmployees, 
+			                       displayEmployees, 
+			                       showEmployees,
+			                       fileReader,
+			                       fileWriter
+			
+ ├── exception
+      ├── InvalidSalaryException.java
+		              └──  ----> if the salary amount is wrong
+				                	            └──  ----> throw InvalidSalaryException
+      └── EmployeeNotFoundException.java
+	              	└──  ----> if the employee is not present.
+					                            └──  ----> throw EmployeeNotFoundException
+ └── main
+       └── Main.java
+		            └── ----> contains user input and handles exception.
+				              	└──  ----> uses: Scanner class,
+							                           Try & Catch block
